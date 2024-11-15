@@ -81,6 +81,7 @@ section {
     align-items: center;
     height: 100vh;
     scroll-snap-align: start;
+    overflow: hidden;
 }
 
 .one {
@@ -117,32 +118,13 @@ section {
     color: var(--text-color);
 }
 
-.two img {
-    width: 320px;
-    height: auto;
-}
-
-/* .two .box {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(206, 33, 33);
-    border-radius: 25px;
-    transform: rotate(-45deg);
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
-.two .box:hover {
-    transform: rotate(0);
-    background-color: rgb(206, 33, 33);
-} */
-
 .three {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #667f95;
-    transition: width 0.35s ease-in, height 0.35s ease-in, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: width 0.35s ease-in, height 0.35s ease-in, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .three h1 {
@@ -153,19 +135,24 @@ section {
     display: grid;
     gap: 25px;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 25px;
 }
 
 .cert-images-row img {
     width: 320px;
     height: auto;
-    transition: margin-top .3s ease;
+    transition: transform .3s ease;
 }
 
 .cert-images-row img:hover {
-    margin-top: -4px ;
+    transform: translateY(-4px);
 }
 
 .four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #7b90a3;
     transition: width 0.35s ease-in, height 0.35s ease-in, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -182,3 +169,5 @@ section {
 .five h1 {
     color: var(--text-color);
 }
+
+/* Modal Image */
