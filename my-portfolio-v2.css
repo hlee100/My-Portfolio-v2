@@ -138,14 +138,54 @@ section {
     margin-bottom: 25px;
 }
 
-.cert-images-row img {
+/* Container for the image */
+.cert-image {
+    position: relative;
+    display: inline-block;
     width: 320px;
     height: auto;
-    transition: transform .3s ease;
 }
 
-.cert-images-row img:hover {
+/* Image hover effect */
+.cert-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+.cert-image:hover img {
     transform: translateY(-4px);
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* Text overlay using the container's ::after pseudo-element */
+.cert-image::after {
+    content: "Click to preview";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+    pointer-events: none; /* Ignore clicks initially */
+    z-index: 1;
+}
+
+/* Show text on hover */
+.cert-image:hover::after {
+    opacity: 1;
+    pointer-events: auto; /* Enable clicks on hover */
+    cursor: pointer;
 }
 
 .four {
@@ -169,5 +209,3 @@ section {
 .five h1 {
     color: var(--text-color);
 }
-
-/* Modal Image */
