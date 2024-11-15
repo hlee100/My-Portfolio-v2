@@ -135,7 +135,7 @@ section {
     display: grid;
     gap: 25px;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 /* Container for the image */
@@ -199,6 +199,56 @@ section {
 
 .four h1 {
     color: var(--text-color);
+}
+
+.web-images-row {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 15px;
+}
+
+.web-image {
+    position: relative;
+    display: inline-block;
+    width: 320px;
+    height: auto;
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.web-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+.web-image:hover img {
+    transform: translateY(-4px);
+    opacity: 0.7;
+}
+
+.web-image .overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.web-image:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .five {
