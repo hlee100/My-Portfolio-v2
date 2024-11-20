@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="modal-image.css">
     <script src="dynamic-cert-preview.js"></script>
     <script src="scroll.js"></script>
@@ -11,6 +12,36 @@
     <title>Henry Lee</title>
 </head>
 <body>
+    <!-- Navbar Trigger -->
+    <div class="menu-container" onclick="toggleMenu()">
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="line top"></div>
+            <div class="line middle"></div>
+            <div class="line bottom"></div>
+        </div>
+    </div>
+
+    <!-- Navbar Content -->
+    <div class="nav-box" id="navBox">
+        <ul>
+            <li><a href="#page-four">My Work</a></li>
+            <li><a href="#page-three">My Certificates</a></li>
+            <li><a href="my-resume/my-resume.html" target="_blank">My Résumé</a></li>
+        </ul>
+        <div class="contact-info-menu">
+            <p>SAY HELLO</p>
+            <p><a href="mailto: henrylee1606@gmail.com">henrylee1606@gmail.com</a></p>
+
+            <div class="social-links">
+                <a href="https://github.com/hlee100" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                <a href="https://www.instagram.com/henrym.lee/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="https://twitter.com/Hypers100" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                <a href="https://www.linkedin.com/in/hlee100/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            </div>
+        </div>
+    </div>
+
+
     <nav>
         <ul>
             <li><a href="#page-one"><button></button></a></li>
@@ -131,6 +162,6 @@
         </section>
     </div>
 
-    <script src="gsap.min.js"></script>
+    <script src="navbar.js"></script>
 </body>
 </html>

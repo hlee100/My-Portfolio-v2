@@ -62,7 +62,7 @@ nav ul li button {
     cursor: pointer;
     transform: rotate(-45deg);
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); 
-    z-index: 99;
+    z-index: 996;
 }
 
 nav ul li button:active {
@@ -193,7 +193,7 @@ section {
     transition: opacity 0.2s ease;
     cursor: pointer;
     pointer-events: none; /* Ignore clicks initially */
-    z-index: 1;
+    z-index: 997;
 }
 
 /* Show text on hover */
@@ -258,7 +258,7 @@ section {
     opacity: 0;
     transition: opacity 0.2s ease;
     pointer-events: none;
-    z-index: 1;
+    z-index: 995;
 }
 
 .web-image:hover .overlay {
