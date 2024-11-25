@@ -20,8 +20,13 @@ function closeOnClickOutside(event) {
 
     // Check if the click was outside the navBox or the hamburger menu
     if (!navBox.contains(event.target) && !menuContainer.contains(event.target)) {
+        // Add delay before removing the active class
         navBox.classList.remove("active");
-        document.getElementById("hamburgerMenu").classList.remove("active");
-        document.removeEventListener("click", closeOnClickOutside);
+        hamburgerMenu.classList.remove("active");
+
+        // Wait for the opacity transition to complete
+        setTimeout(() => {
+            document.removeEventListener("click", closeOnClickOutside);
+        }, 400); // Match the duration of the transition (400ms)
     }
 }

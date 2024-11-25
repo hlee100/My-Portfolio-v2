@@ -192,14 +192,14 @@ section {
     opacity: 0;
     transition: opacity 0.2s ease;
     cursor: pointer;
-    pointer-events: none; /* Ignore clicks initially */
+    pointer-events: none;
     z-index: 997;
 }
 
 /* Show text on hover */
 .cert-image:hover::after {
     opacity: 1;
-    pointer-events: auto; /* Enable clicks on hover */
+    pointer-events: auto;
     cursor: pointer;
 }
 
@@ -228,7 +228,6 @@ section {
     display: inline-block;
     width: 320px;
     height: auto;
-    text-decoration: none; /* Remove underline from the link */
 }
 
 .web-image img {
