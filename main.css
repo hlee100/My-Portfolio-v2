@@ -69,10 +69,12 @@ nav ul li button:active {
     transform: rotate(0);
 }
 
-.container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y proximity;
+@media screen and (min-width: 500px) {
+    .container {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y proximity;
+    }
 }
 
 section {
@@ -138,11 +140,40 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(180deg, hsla(227, 45%, 43%, 1) 5%, hsla(223, 70%, 67%, 1) 95%);
+    padding: 0 20vw;
+    transition: width 0.35s ease-in, height 0.35s ease-in, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.three h1 {
+    color: var(--text-color);
+}
+
+.portev-row {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 15px;
+}
+
+.portev-box {
+    position: relative;
+    display: inline-block;
+    background: black;
+    width: 220px;
+    height: 200px;
+}
+
+.four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(180deg, hsla(223, 70%, 67%, 1) 5%, hsla(227, 45%, 43%, 1) 95%);
     transition: width 0.35s ease-in, height 0.35s ease-in, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.three h1 {
+.four h1 {
     color: var(--text-color);
 }
 
@@ -203,7 +234,7 @@ section {
     cursor: pointer;
 }
 
-.four {
+.five {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,7 +243,7 @@ section {
     transition: width 0.35s ease-in, height 0.35s ease-in, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.four h1 {
+.five h1 {
     color: var(--text-color);
 }
 
@@ -265,7 +296,7 @@ section {
     pointer-events: auto;
 }
 
-.five {
+.six {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,7 +305,7 @@ section {
     transition: width 0.35s ease-in, height 0.35s ease-in, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.five h1 {
+.six h1 {
     margin: 0;
     color: var(--text-color);
 }
