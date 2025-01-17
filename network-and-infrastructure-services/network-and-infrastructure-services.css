@@ -48,12 +48,19 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 300vh;
+    height: 1000vh;
     background: linear-gradient(180deg, hsla(227, 45%, 43%, 1) 5%, hsla(223, 70%, 67%, 1) 95%);
 }
 
-.two h1 {
+.two,
+h1,
+p {
     color: var(--text-color);
+}
+
+.two p {
+    margin: 0;
+    padding: 25px 30vw 50px;
 }
 
 .photo-gallery-row {
