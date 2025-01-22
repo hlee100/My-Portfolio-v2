@@ -48,7 +48,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 1000vh;
+    height: 500vh;
     background: linear-gradient(180deg, hsla(227, 45%, 43%, 1) 5%, hsla(223, 70%, 67%, 1) 95%);
 }
 
