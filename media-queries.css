@@ -2,67 +2,33 @@
     nav ul li button {
         width: .9rem;
         height: .9rem;
-        background-color: var(--text-color);
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transform: rotate(-45deg);
-        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); 
-        z-index: 996;
     }
 
     .cert-image {
-        position: relative;
-        display: inline-block;
         width: 240px;
         height: auto;
     }
 
     .cert-image::after {
-        content: "Click to preview";
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 5px 10px;
         font-size: 12px;
-        border-radius: 4px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: opacity 0.2s ease;
-        cursor: pointer;
-        pointer-events: none;
-        z-index: 997;
+    }
+
+    .portev-image {
+        width: 240px;
+        height: auto;
+    }
+
+    .portev-image .overlay {
+        font-size: 12px;
     }
 
     .web-image {
-        position: relative;
-        display: inline-block;
         width: 240px;
         height: auto;
     }
 
     .web-image .overlay {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 5px 10px;
         font-size: 10px;
-        border-radius: 4px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: opacity 0.2s ease;
-        pointer-events: none;
-        z-index: 995;
     }
 }
 
@@ -70,67 +36,40 @@
     nav ul li button {
         width: .8rem;
         height: .8rem;
-        background-color: var(--text-color);
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transform: rotate(-45deg);
-        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); 
-        z-index: 996;
     }
 
     .cert-image {
-        position: relative;
-        display: inline-block;
         width: 160px;
         height: auto;
     }
 
+    .cert-images-row {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 10px;
+    }
+
     .cert-image::after {
-        content: "Click to preview";
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 5px 10px;
-        font-size: 12px;
-        border-radius: 4px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: opacity 0.2s ease;
-        cursor: pointer;
-        pointer-events: none;
-        z-index: 997;
+        font-size: 7px;
+    }
+
+    .portev-image {
+        width: 160px;
+        height: auto;
+    }
+
+    .portev-image .overlay {
+        font-size: 7px;
     }
 
     .web-image {
-        position: relative;
-        display: inline-block;
         width: 160px;
         height: auto;
     }
 
     .web-image .overlay {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 5px 10px;
-        font-size: 10px;
-        border-radius: 4px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: opacity 0.2s ease;
-        pointer-events: none;
-        z-index: 995;
+        font-size: 7px;
     }
 }
 
@@ -182,8 +121,6 @@
     }
 
     .cert-image {
-        position: relative;
-        display: inline-block;
         width: 140px;
         height: auto;
     }
@@ -191,34 +128,31 @@
     .cert-images-row {
         display: grid;
         gap: 15px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         margin-bottom: 5px;
     }
 
     .cert-image::after {
-        content: "Click to preview";
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 5px 10px;
         font-size: 6px;
-        border-radius: 4px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: opacity 0.2s ease;
-        cursor: pointer;
-        pointer-events: none;
-        z-index: 997;
+    }
+
+    .portev-images-row {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 5px;
+    }
+
+    .portev-image {
+        width: 140px;
+        height: auto;
+    }
+
+    .portev-image .overlay {
+        font-size: 6px;
     }
 
     .web-image {
-        position: relative;
-        display: inline-block;
         width: 140px;
         height: auto;
     }
@@ -226,27 +160,12 @@
     .web-images-row {
         display: grid;
         gap: 15px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         margin-bottom: 5px;
     }
 
     .web-image .overlay {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 5px 10px;
         font-size: 6px;
-        border-radius: 4px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: opacity 0.2s ease;
-        pointer-events: none;
-        z-index: 995;
     }
 }
 
@@ -312,18 +231,7 @@
     }
 
     .one h1 {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 75px;
-        background: var(--text-color);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        animation: fadeIn 1s ease-in 1s;
-        animation-fill-mode: forwards;
-        opacity: 0;
     }
 
     .two h1 {
@@ -338,14 +246,12 @@
     .cert-images-row {
         display: grid;
         gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         margin-bottom: 1px;
     }
     
     .cert-image {
-        position: relative;
-        display: inline-block;
-        width: 110px;
+        width: 150px;
         height: auto;
     }
 
@@ -363,17 +269,35 @@
         pointer-events: auto;
     }
 
+    .portev-images-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+        margin-bottom: 1px;
+    }
+    
+    .portev-image {
+        width: 180px;
+        height: auto;
+    }
+
+    .portev-image .overlay {
+        display: none;
+    }
+
     .web-images-row {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
         margin-bottom: 1px;
     }
     
     .web-image {
-        position: relative;
-        display: inline-block;
-        width: 115px;
+        width: 200px;
         height: auto;
     }
 
@@ -457,18 +381,7 @@
 
 @media screen and (max-width: 400px) {
     .one h1 {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 65px;
-        background: var(--text-color);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        animation: fadeIn 1s ease-in 1s;
-        animation-fill-mode: forwards;
-        opacity: 0;
     }
 
     .two h1 {
@@ -483,7 +396,7 @@
     .cert-images-row {
         display: grid;
         gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         margin-bottom: 1px;
     }
     
@@ -508,10 +421,24 @@
         pointer-events: auto;
     }
 
+    .portev-images-row {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 1px;
+    }
+    
+    .portev-image {
+        position: relative;
+        display: inline-block;
+        width: 105px;
+        height: auto;
+    }
+
     .web-images-row {
         display: grid;
         gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         margin-bottom: 1px;
     }
     
@@ -554,18 +481,7 @@
     }
     
     .one h1 {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 60px;
-        background: var(--text-color);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        animation: fadeIn 1s ease-in 1s;
-        animation-fill-mode: forwards;
-        opacity: 0;
     }
 
     .two h1 {
@@ -580,14 +496,12 @@
     .cert-images-row {
         display: grid;
         gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         margin-bottom: 1px;
     }
     
     .cert-image {
-        position: relative;
-        display: inline-block;
-        width: 90px;
+        width: 110px;
         height: auto;
     }
 
@@ -604,18 +518,30 @@
         opacity: 1;
         pointer-events: auto;
     }
-
-    .web-images-row {
+    
+    .portev-images-row {
         display: grid;
         gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 1px;
+    }
+
+    .portev-image {
+        width: 120px;
+        height: auto;
+    }
+
+    .web-images-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
         margin-bottom: 1px;
     }
     
     .web-image {
-        position: relative;
-        display: inline-block;
-        width: 95px;
+        width: 130px;
         height: auto;
     }
 

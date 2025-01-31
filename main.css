@@ -141,7 +141,6 @@ section {
     justify-content: center;
     align-items: center;
     background: linear-gradient(180deg, hsla(223, 70%, 67%, 1) 0%, hsla(227, 45%, 43%, 1) 95%);
-    padding: 0 20vw;
     transition: width 0.35s ease-in, height 0.35s ease-in, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
@@ -152,7 +151,7 @@ section {
 .portev-images-row {
     display: grid;
     gap: 25px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 15px;
 }
 
@@ -214,7 +213,7 @@ section {
 .cert-images-row {
     display: grid;
     gap: 25px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 15px;
 }
 
@@ -284,7 +283,7 @@ section {
 .web-images-row {
     display: grid;
     gap: 25px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:repeat(3, 1fr);
     margin-bottom: 15px;
 }
 
