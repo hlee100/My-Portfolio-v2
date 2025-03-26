@@ -1,3 +1,10 @@
+@media screen and (max-width: 1550px) {
+    .cert-image {
+        width: 280px;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 1250px) {
     nav ul li button {
         width: .9rem;
