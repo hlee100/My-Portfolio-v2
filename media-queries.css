@@ -78,18 +78,29 @@
     .web-image .overlay {
         font-size: 7px;
     }
+
+    hr  {
+        margin: 0 25px 25px 25px;
+        width: 600px;
+    }
+
+    .copyright-socials {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 225px;
+    }
 }
 
 @media screen and (max-width: 850px) {
     hr  {
         margin: 0 25px 25px 25px;
-        width: 600px;
+        width: 500px;
     }
     
     .copyright-socials {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 250px;
+        gap: 175px;
     }
     
     .copyright-socials p {
@@ -103,18 +114,21 @@
         width: 500px;
     }
     
-    .copyright-socials {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 150px;
-    }
-    
     .copyright-socials p {
         color: var(--text-color);
     }
 }
 
 @media screen and (max-width: 750px) {
+    nav {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        width: 60px;
+    }
+
     nav ul li button {
         width: .8rem;
         height: .8rem;
@@ -183,7 +197,7 @@
         height: 100vh;
         position: fixed;
         right: 0;
-        width: 50px;
+        width: 40px;
     }
 }
 
@@ -195,6 +209,18 @@
         position: fixed;
         right: 0;
         width: 40px;
+    }
+
+    hr  {
+        margin: 0 25px 25px 25px;
+        width: 400px;
+    }
+
+    .copyright-socials {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        font-size: .9rem;
     }
 }
 
@@ -246,8 +272,12 @@
     }
     
     .two p {
-        font-size: .7rem;
+        font-size: .8rem;
         color: var(--text-color);
+    }
+
+    .two {
+        padding: 0 15vw;
     }
 
     .cert-images-row {
@@ -396,14 +426,14 @@
     }
     
     .two p {
-        font-size: .65rem;
+        font-size: .75rem;
         color: var(--text-color);
     }
 
     .cert-images-row {
         display: grid;
         gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin-bottom: 1px;
     }
     
@@ -429,30 +459,34 @@
     }
 
     .portev-images-row {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
         margin-bottom: 1px;
     }
     
     .portev-image {
         position: relative;
         display: inline-block;
-        width: 105px;
+        width: 175px;
         height: auto;
     }
 
     .web-images-row {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
         margin-bottom: 1px;
     }
     
     .web-image {
         position: relative;
         display: inline-block;
-        width: 105px;
+        width: 175px;
         height: auto;
     }
 
@@ -496,19 +530,19 @@
     }
     
     .two p {
-        font-size: .65rem;
+        font-size: .7rem;
         color: var(--text-color);
     }
 
     .cert-images-row {
         display: grid;
-        gap: 10px;
+        gap: 5px;
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 1px;
     }
     
     .cert-image {
-        width: 110px;
+        width: 125px;
         height: auto;
     }
 
@@ -527,14 +561,16 @@
     }
     
     .portev-images-row {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
         margin-bottom: 1px;
     }
 
     .portev-image {
-        width: 120px;
+        width: 175px;
         height: auto;
     }
 
@@ -548,16 +584,12 @@
     }
     
     .web-image {
-        width: 130px;
+        width: 175px;
         height: auto;
     }
 
     .web-image .overlay {
         display: none;
-    }
-
-    .contact-info a {
-        font-size: 20px;
     }
 
     hr  {
@@ -574,9 +606,5 @@
     
     .copyright-socials p {
         color: var(--text-color);
-    }
-
-    .contact-info a {
-        font-size: 18px;
     }
 }
