@@ -356,6 +356,9 @@ section {
 }
 
 hr  {
+    height: 1px;
+    background: var(--text-color);
+    border-color: transparent;
     margin: 0 25px 25px 25px;
     width: 800px;
 }

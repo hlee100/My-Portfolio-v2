@@ -426,7 +426,7 @@
     }
     
     .two p {
-        font-size: .7rem;
+        font-size: .65rem;
         color: var(--text-color);
     }
 
@@ -470,7 +470,7 @@
     .portev-image {
         position: relative;
         display: inline-block;
-        width: 165px;
+        width: 150px;
         height: auto;
     }
 
@@ -516,11 +516,6 @@
 }
 
 @media screen and (max-width: 375px) {
-    .two p {
-        font-size: .6rem;
-        color: var(--text-color);
-    }
-    
     .one h1 {
         font-size: 60px;
     }
@@ -528,9 +523,9 @@
     .two h1 {
         color: var(--text-color);
     }
-    
+
     .two p {
-        font-size: .7rem;
+        font-size: .6rem;
         color: var(--text-color);
     }
 
@@ -570,7 +565,7 @@
     }
 
     .portev-image {
-        width: 175px;
+        width: 150px;
         height: auto;
     }
 
