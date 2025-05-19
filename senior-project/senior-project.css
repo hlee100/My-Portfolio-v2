@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+:root {
+    --text-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, hsla(223, 70%, 67%, 1) 0%, hsla(227, 45%, 43%, 1) 95%);
+}
+
+.one h1 {
+    margin: 0;
+    font-size: 50px;
+    color: var(--text-color);
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 500vh;
+    background: linear-gradient(180deg, hsla(227, 45%, 43%, 1) 5%, hsla(223, 70%, 67%, 1) 95%);
+}
+
+.two,
+h1,
+p {
+    color: var(--text-color);
+}
+
+.two p {
+    margin: 25px 25vw 50px;
+    font-size: 20px;
+}
+
+.photo-gallery-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.photo-image img {
+    width: 320px;
+    height: auto;
+}
