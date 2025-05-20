@@ -48,7 +48,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 500vh;
+    height: 1000vh;
     background: linear-gradient(180deg, hsla(227, 45%, 43%, 1) 5%, hsla(223, 70%, 67%, 1) 95%);
 }
 
@@ -65,12 +65,12 @@ p {
 
 .photo-gallery-row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 25px;
     margin-bottom: 15px;
 }
 
 .photo-image img {
-    width: 320px;
+    width: 640px;
     height: auto;
 }

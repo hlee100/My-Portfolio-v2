@@ -65,12 +65,17 @@ p {
 
 .photo-gallery-row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 25px;
     margin-bottom: 15px;
 }
 
 .photo-image img {
-    width: 320px;
+    width: 960px;
+    height: auto;
+}
+
+.photo-image video {
+    width: 960px;
     height: auto;
 }
